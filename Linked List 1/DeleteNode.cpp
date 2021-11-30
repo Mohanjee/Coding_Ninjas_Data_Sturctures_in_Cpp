@@ -21,21 +21,23 @@ Sample Output 2 :
 /***************************************************** SOLUTION **********************************************************************/
 
 
-Node* deleteNode(Node *head, int i) {
+Node *deleteNode(Node *head, int pos)
+{
     Node *temp = head;
     Node *prev = NULL;
-    int count = 0;
+    int i = 0;
     
-    if(i == 0){
-        head = temp -> next;
+    if(head == NULL) return head;
+    
+    if(pos == 0){
+        head = head -> next;
         delete(temp);
     }
-    //temp = head;
     else{
-        while( i != count){
+        while( i != pos && temp){
             prev = temp;
             temp = temp -> next;
-            count++;
+            i++;
         }
         
         if(temp != NULL){
@@ -43,7 +45,7 @@ Node* deleteNode(Node *head, int i) {
             delete (temp);
         }
     }
-    return head; 
+    return head;
 }
 /*
 Node* deleteNode(Node *head, int position) { 
