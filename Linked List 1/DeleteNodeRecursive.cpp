@@ -22,22 +22,25 @@ Sample Output 2 :
 /***************************************************** SOLUTION **********************************************************************/
 
 
-Node* deleteNodeRec(Node *head, int position) {
+Node *deleteNode(Node *head, int pos)
+{
+    if(head == NULL) return head;
+    
     Node *prev = NULL;
     Node *ptr = head;
     
-    int pos = 0;
+    int cnt = 0;
     
-    if(position==0)
+    if(pos==0)
     {
         head=head->next;
         delete (ptr);
     }
     else
     {
-        while(position!=pos)
+        while(ptr != NULL && pos!=cnt)
         {
-            ++pos;
+            ++cnt;
             prev=ptr;
             ptr=ptr->next;
         }
@@ -49,4 +52,5 @@ Node* deleteNodeRec(Node *head, int position) {
         }
     }
     return head;
+    
 }
