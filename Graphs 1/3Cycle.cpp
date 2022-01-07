@@ -21,7 +21,7 @@ Sample Output:
 /****************************************************** SOLUTION *******************************************************************/
 
 
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 int helper(int i, int** matrix, int n, int* visited, int & count){
     for(int j=1;j<n+1;j++){
@@ -71,4 +71,20 @@ int solve(int n,int m,vector<int>u,vector<int>v)
     }
     
     return sum;
+}
+
+int main() {
+    int n, m;
+    cin>>n>>m;
+    
+    vector<int> u, v;
+    for(int i=0; i<m; i++){
+        int a, b;
+        cin>>a>>b;
+        
+        u.push_back(a+1);
+        v.push_back(b+1);
+    }
+    
+    cout<<solve(n, m, u, v);
 }
