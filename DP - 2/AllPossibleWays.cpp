@@ -23,7 +23,26 @@ Sample Output 2 :
 
 
 /******************************************************* SOLUTION ************************************************************************/
+#include<cmath>
 
+int helper(int a, int b, int num){
+    // Base cases
+    int val = (a - pow(num, b));
+    if (val == 0)
+        return 1;
+    if (val < 0)
+        return 0;
+ 
+    // Consider two possibilities, num is
+    // included and num is not included.
+    return helper(val, b, num + 1) +
+           helper(a, b, num + 1);
+}
+
+int getAllWays(int a, int b) {
+	// Write your code here
+    return helper(a, b, 1);
+}
 
 #include<math.h>
 using namespace std; 
