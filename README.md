@@ -1,5 +1,5 @@
-# Eminence - Data Strucures & Algo Using C++. Coding Ninjas(Batch:May 01, 2020)
-# My Offical Website: https://ashhar001.github.io/my-react-portfolio/
+# Eminence - Data Strucures & Algo Using C++. Coding Ninjas(Batch:August 14, 2023)
+
 # Repository for storing implementations and solutions of Assignments and Test questions in C++.
 # Complete course: Well Organized and sorted.
   
@@ -11,8 +11,8 @@
 ```
 ## Students:
 
-Fork this repo or download this, add the codes and the questions to C++ files that are not present and send it to me at ashar.ansari1020@gmail.com Start Open Source Contributions today!!! Needless to say, this adds value to your resume.
+Fork this repo or download this, add the codes and the questions to C++ files that are not present and send it to me. Start Open Source Contributions today!!! Needless to say, this adds value to your resume.
 
 
 ### Refer the the link below to get upto Rs.1000 discount on Coding Ninjas Courses
-https://classroom.codingninjas.com/app/invite/CHVYN
+
